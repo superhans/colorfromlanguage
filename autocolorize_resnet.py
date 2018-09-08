@@ -14,7 +14,6 @@ import h5py as h5
 import json
 import numpy as np
 import cv2
-import pudb
 import string
 import time
 import random
@@ -225,9 +224,6 @@ def train(minibatches, net, optimizer, epoch, prior_probs, img_save_folder):
 def scale_attention_map(x):                                                                   
     x = (x - np.min(x)) / (np.max(x) - np.min(x))                                
     y = x * 255.                                                                 
-#    x = x - min_                                                                
-#    y = x*255 / np.max(x)                                                       
-#    pudb.set_trace()                                                            
     y = cv2.cvtColor(y.astype('uint8'), cv2.COLOR_GRAY2RGB).astype('uint8')      
     y = cv2.applyColorMap(y, cv2.COLORMAP_JET)                                   
     return cv2.resize(y, (224, 224), interpolation = cv2.INTER_LANCZOS4)         
@@ -277,7 +273,6 @@ def evaluate_attention_maps(minibatches, net, epoch, img_save_folder, save_every
               
                val_loss += error_metric(img_dec, img_rgb)
                if k == 0 and i%save_every == 0:
-		   # pudb.set_trace()
 	           output_maps = torch.mean(output_maps, dim=1)
                    output_maps = output_maps.data.cpu().numpy()
                    output_maps = scale_attention_map(output_maps[k])
