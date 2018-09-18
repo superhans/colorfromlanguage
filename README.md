@@ -1,5 +1,4 @@
 Code base of the paper : Learning to Color from Language
-More coming soon !!
 
 
 1. Download data : https://obj.umiacs.umd.edu/learning_to_color/coco_colors.h5
