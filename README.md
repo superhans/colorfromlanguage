@@ -1,4 +1,4 @@
-Code base of the paper : Learning to Color from Language
+Code base of the paper : [Learning to Color from Language](http://aclweb.org/anthology/N18-2120)
 
 
 1. Download data : https://obj.umiacs.umd.edu/learning_to_color/coco_colors.h5
@@ -8,3 +8,6 @@ Code base of the paper : Learning to Color from Language
 
 3. Then run : 
 `python autocolorize_resnet.py --h5_File coco_colors.h5 --features_file ./image_features.h5 --vocab_file_name ./priors/coco_colors_vocab.p --image_save_folder ./trial/ --model_save_file ./models/`
+
+
+![Film Activations](./images/Activations4.png)
