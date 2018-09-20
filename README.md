@@ -1,6 +1,8 @@
-Code base of the paper : [Learning to Color from Language](http://aclweb.org/anthology/N18-2120)
+## Learning to Color from Language
+[Learning to Color from Language](http://aclweb.org/anthology/N18-2120)
 
 
+### Instrictions : 
 1. Download data : https://obj.umiacs.umd.edu/learning_to_color/coco_colors.h5
 
 2. Extract features from black-and-white images
@@ -10,4 +12,4 @@ Code base of the paper : [Learning to Color from Language](http://aclweb.org/ant
 `python autocolorize_resnet.py --h5_File coco_colors.h5 --features_file ./image_features.h5 --vocab_file_name ./priors/coco_colors_vocab.p --image_save_folder ./trial/ --model_save_file ./models/`
 
 
-![Film Activations](./images/Activations4.png)
+![Film Activations](https://raw.githubusercontent.com/superhans/colorfromlanguage/master/images/Activations4.png)
