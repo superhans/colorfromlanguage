@@ -16,9 +16,9 @@
 
 If you use this work, please cite:
 
-@InProceedings{Manjunatha:Iyyer-ColorLanguage,
-    Title = {Learning to Color from Language},
-    Booktitle = {North American Chapter of the Association for Computational Linguistics},
-    Author = {Varun Manjunatha and Mohit Iyyer and Jordan Boyd-Graber and Larry Davis},
-    Year = {2018},
-}
+    @InProceedings{Manjunatha:Iyyer-ColorLanguage,
+        Title = {Learning to Color from Language},
+        Booktitle = {North American Chapter of the Association for Computational Linguistics},
+        Author = {Varun Manjunatha and Mohit Iyyer and Jordan Boyd-Graber and Larry Davis},
+        Year = {2018},
+    }
